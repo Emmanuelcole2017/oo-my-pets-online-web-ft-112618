@@ -18,6 +18,12 @@ class Owner
     fishInstance = Fish.new(name)
     @pets[:fishes] << fishInstance
   end
+
+  def buy_cat(name)
+    catInstance = Cat.new(name)
+    @pets[:cats] << catInstance
+  end
+  
   def self.all
     @@all
   end
