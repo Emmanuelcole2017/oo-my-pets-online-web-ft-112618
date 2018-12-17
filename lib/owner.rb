@@ -49,6 +49,8 @@ class Owner
     @pets.each{|petSpecies, pet|
       pet[0].mood = "nervous"}
     @pets = {}
+  end
+  
   def self.count
     @@all.length
   end
