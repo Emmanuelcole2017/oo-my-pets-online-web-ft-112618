@@ -23,6 +23,11 @@ class Owner
     catInstance = Cat.new(name)
     @pets[:cats] << catInstance
   end
+
+  def buy_dog(name)
+    dogInstance = Dog.new(name)
+    @pets[:dogs] << dogInstance
+  end
   
   def self.all
     @@all
