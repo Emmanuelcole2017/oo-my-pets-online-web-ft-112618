@@ -36,7 +36,7 @@ class Owner
   def walk_dogs
     @pets[:dogs][0].mood = "happy"
   end
-  
+
   def self.count
     @@all.length
   end
