@@ -28,7 +28,7 @@ class Owner
     dogInstance = Dog.new(name)
     @pets[:dogs] << dogInstance
   end
-  
+
   def self.all
     @@all
   end
