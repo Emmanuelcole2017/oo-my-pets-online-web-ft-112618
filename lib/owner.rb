@@ -45,6 +45,10 @@ class Owner
     @pets[:fishes][0].mood = "happy"
   end
 
+  def sell_pets
+    @pets.each{|petSpecies, pet|
+      pet[0].mood = "nervous"}
+    @pets = {}
   def self.count
     @@all.length
   end
