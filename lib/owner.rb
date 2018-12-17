@@ -41,6 +41,10 @@ class Owner
     @pets[:cats][0].mood = "happy"
   end
 
+  def feed_fish
+    @pets[:fishes].mood = "happy"
+  end
+  
   def self.count
     @@all.length
   end
